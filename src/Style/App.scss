@@ -1,0 +1,62 @@
+.site-layout{
+    min-height: 100vh;
+}
+.site-layout-header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 0 15px #1890ff;
+}
+.site-layout-content{
+    margin-top: 64px;
+    padding: 0 50px;
+    @media screen and (max-width: 768px) {
+        padding: 0 25px;
+    }
+    @media screen and (max-width: 576px) {
+        padding: 0 10px;
+    }
+}
+.site-layout-footer{
+    text-align: center;
+    cursor: default;
+}
+.site-layout-content__container {
+    min-height: 100%;
+    padding: 24px;
+    background:  #f0f3f4;
+   
+}
+.linksContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 200px;
+    width: 30%;
+    min-width: 150px;
+    margin: auto;
+    .icon{
+        min-width: 30px;
+        height: 30px;
+        mask-position: center;
+        mask-size: cover;
+        mask-repeat: none;
+        background-color: #001529;
+        transition: background-color .2s;
+        &:hover{
+            background-color: #1890ff;
+        }
+    }
+    .githubIcon{
+        mask-image: url('../content/githubIcon.svg');
+    }
+    .instagramIcon{
+        mask-image: url('../content/instagramIcon.svg');
+    }
+    .telegramIcon{
+        mask-image: url('../content/telegramIcon.svg');
+    }
+    .vkIcon{
+        mask-image: url('../content/vkIcon.svg');
+    }
+}
