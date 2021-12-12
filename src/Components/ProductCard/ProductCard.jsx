@@ -61,7 +61,7 @@ export default function ProductCard({ID, NAME, IMG, COST, PRODUCT, WITHOUTPHOTO}
         >
             <Meta
                 title={NAME}
-                description={COST}
+                description={COST+"$"}
             />
         </Card>
     )
